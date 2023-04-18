@@ -29,6 +29,6 @@ VALUES
 ('John', 'Jones', 3, NULL),
 ('Steve', 'Jobs', 2, 4),
 ('Jane', 'Doe', 1, 2),
-('Selena', 'Gomez', 3, 8),
+('Soap', 'McTavish', 3, 8),
 ('Ethan', 'Klein', 1, NULL),
-('Robert', 'Doggert', 6, 2),
+('Robert', 'Robertson', 6, 2),
