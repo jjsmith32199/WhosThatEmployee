@@ -1,34 +1,34 @@
-use employees_db;
+USE employees;
 
-insert INTO department
-    (dept_name)
+INSERT INTO department
+    (name)
 VALUES
-    ('Engineer'),
+    ('Sales'),
+    ('Engineering'),
     ('Finance'),
-    ('Legal'),
-    ('Sales')
+    ('Legal');
 
 INSERT INTO role
     (title, salary, department_id)
 VALUES
     ('Sales Lead', 100000, 1),
     ('Salesperson', 80000, 1),
+    ('Lead Engineer', 150000, 2),
     ('Software Engineer', 120000, 2),
-    ('Lead Engineer' 150000, 2),
-    ('Accountant', 125000, 3),
     ('Account Manager', 160000, 3),
-    ('Lawyer', 190000, 4),
-    ('Legal Team Lead', 250000, 4)
+    ('Accountant', 125000, 3),
+    ('Legal Team Lead', 250000, 4),
+    ('Lawyer', 190000, 4);
 
 INSERT INTO employees
     (first_name, last_name, role_id, manager_id)
 VALUES
-('Tim', 'Allen', 1, 1),
-('Jon', 'Bob', 2, NULL),
-('Bob', 'Ross', 4, NULL),
-('John', 'Jones', 3, NULL),
-('Steve', 'Jobs', 2, 4),
-('Jane', 'Doe', 1, 2),
-('Soap', 'McTavish', 3, 8),
-('Ethan', 'Klein', 1, NULL),
-('Robert', 'Robertson', 6, 2),
+('Tim', 'Allen', 1, NULL),
+('Jon', 'Bob', 2, 1),
+('Bob', 'Ross', 3, NULL),
+('John', 'Jones', 4, 3),
+('Steve', 'Jobs', 5, NULL),
+('Jane', 'Doe', 6, 5),
+('Soap', 'McTavish', 7, NULL),
+('Ethan', 'Klein', 8, 7);
+
